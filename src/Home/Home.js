@@ -1,12 +1,5 @@
 import React from 'react';
-
-
 const Home = () => {
-    return (
-        <div>
-            home
-        </div>
-    );
+    return <div>Pokemon</div>;
 };
-
 export default Home;

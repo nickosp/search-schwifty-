@@ -1,14 +1,16 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
 const Results = () => {
-    return (
-        <div>
-            results
-        </div>
-    );
+    useEffect(() => {
+    }, [])
+	return (
+    <div>Results</div>
+    )
 };
-
 export default Results;
+
+
+
+
 // const url = '';
 // fetch(url)
 //   .then(res => res.json())
