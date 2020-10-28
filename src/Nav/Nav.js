@@ -1,11 +1,12 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Nav = () => {
-    return (
-        <div>
-            nav
-        </div>
-    );
+	return (
+/// make a home and search button
+		<div>
+			<Link to='/home'>Home</Link>
+			<Link to='/search'>Search</Link>
+		</div>
+	);
 };
-
 export default Nav;
