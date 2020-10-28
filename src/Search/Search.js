@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Results from '../Results/Results';
+////reset back to intial state after search 
 const Search = () => {
 	const initialState = {
 		searchBar: '',
