@@ -1,16 +1,33 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Results from '../Results/Results';
 const Search = () => {
-    return (
-        <div>
-            search
-        <form>
-        <label htmlFor='searchBar'>
-            <input id='searchBar' />
-        </label>
-        </form>
-        </div>
-    );
+	const initialState = {
+		searchBar: '',
+	};
+	const [formState, setFormState] = useState(initialState);
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		console.log(formState);
+		setFormState(initialState);
+	};
+	const handleChange = (event) => {
+		setFormState({ ...formState, [event.target.id]: event.target.value });
+	};
+	return (
+		<div>
+			Search
+			<form onSubmit={handleSubmit}>
+				<label htmlFor='searchBar'>
+					<input
+						id='searchBar'
+						onChange={handleChange}
+						value={formState.searchBar}
+					/>
+					<button type='submit'>Submit</button>
+				</label>
+			</form>
+		</div>
+	);
 };
-
 export default Search;
