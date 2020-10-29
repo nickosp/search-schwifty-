@@ -1,34 +1,38 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import Results from '../Results/Results';
-///make a search bar///
 const Search = () => {
-	const initialState = {
-		searchBar: '',
-	};
-	const [formState, setFormState] = useState(initialState);
+	const [filteredResults, setFilteredResults] = useState([]);
+	const [characterResult, setCharacterResult] = useState([]);
+	const url = 'https://rickandmortyapi.com/api/character/';
+	useEffect(() => {
+		fetch(url)
+			.then((res) => res.json())
+			.then((resJson) => {
+				console.log(resJson);
+				setCharacterResult(resJson.results);
+			})
+			.catch(console.error);
+	}, []);
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		console.log(formState);
-		setFormState(initialState);
+		console.log(event.target[0].value);
 	};
 	const handleChange = (event) => {
-		setFormState({ ...formState, [event.target.id]: event.target.value });
+		const filterResults = characterResult.filter((result) => {
+			return result.name.includes(event.target.value.toUpperCase());
+		});
+		setFilteredResults(filterResults);
 	};
 	return (
 		<div>
 			Search
 			<form onSubmit={handleSubmit}>
-				<label htmlFor='searchCharacters'>
-					<input
-						id='searchCharacter'
-						onChange={handleChange}
-						value={formState.searchCharacter}
-					/>
-					<button type='submit'>Submit</button>
+				<label htmlFor='searchBar'>
+					<input id='searchBar' onChange={handleChange} />
+					<button type='submit'>Search Characters By Keywords</button>
 				</label>
 			</form>
-			<Results />
+			<Results characterResult={characterResult} filteredResults={filteredResults} />
 		</div>
 	);
 };
