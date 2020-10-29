@@ -6,6 +6,7 @@ import Nav from './Nav/Nav';
 import Search from './Search/Search';
 import Results from './Results/Results';
 function App() {
+	// console.log('helloworld');
 	return (
 		<div className='App'>
 			<Nav />

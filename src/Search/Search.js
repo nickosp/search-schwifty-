@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Results from '../Results/Results';
+///make a search bar///
 const Search = () => {
 	const initialState = {
 		searchBar: '',
@@ -18,11 +19,11 @@ const Search = () => {
 		<div>
 			Search
 			<form onSubmit={handleSubmit}>
-				<label htmlFor='searchBar'>
+				<label htmlFor='searchCharacters'>
 					<input
-						id='searchBar'
+						id='searchCharacter'
 						onChange={handleChange}
-						value={formState.searchBar}
+						value={formState.searchCharacter}
 					/>
 					<button type='submit'>Submit</button>
 				</label>

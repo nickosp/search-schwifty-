@@ -1,5 +1,5 @@
 import React from 'react';
 const Home = () => {
-    return <div>Pokemon</div>;
+    return <div>Rick Morty</div>;
 };
 export default Home;
