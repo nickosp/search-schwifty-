@@ -3,14 +3,29 @@ import Results from '../Results/Results';
 const Search = () => {
 	const [filteredResults, setFilteredResults] = useState([]);
 	const [characterResult, setCharacterResult] = useState([]);
+
+	function getCharacterIds(numberOfCharacters) {
+		let characterIDs = [];
+		for (let i = 1; i < numberOfCharacters; i++) {
+			characterIDs.push(i);
+		}
+		return characterIDs;
+	}
+
 	const url = 'https://rickandmortyapi.com/api/character/';
 	useEffect(() => {
 		fetch(url)
 			.then((res) => res.json())
 			.then((resJson) => {
-				console.log(resJson);
-				setCharacterResult(resJson.results);
+				let count = resJson.info.count;
+				count = getCharacterIds(count);
+				return fetch(url + count);
 			})
+			.then((res) => res.json())
+			.then((resJson) => {
+			setCharacterResult(resJson)
+			})
+
 			.catch(console.error);
 	}, []);
 	const handleSubmit = (event) => {
@@ -32,7 +47,10 @@ const Search = () => {
 					<button type='submit'>Search Characters By Keywords</button>
 				</label>
 			</form>
-			<Results characterResult={characterResult} filteredResults={filteredResults} />
+			<Results
+				characterResult={characterResult}
+				filteredResults={filteredResults}
+			/>
 		</div>
 	);
 };

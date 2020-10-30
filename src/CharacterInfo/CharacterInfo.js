@@ -19,11 +19,12 @@ import React, { useState, useEffect } from 'react';
             return null;
         }
     return (
-        <div>
-            <h2>{characterInfo.name}</h2>
-            {/* <img src={url} /> */}
-        </div>
-    );
+			<div>
+				<h2>{characterInfo.name}</h2>
+				<img src={characterInfo.image} />
+				<h2>{characterInfo.origin.name}</h2>
+			</div>
+		);
 };
 
 export default CharacterInfo;

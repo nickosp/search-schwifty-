@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 const Results = ({ characterResult, filteredResults }) => {
+    console.log(characterResult, filteredResults);
 	const resultsDisplay =
 		filteredResults.length === 0 ? characterResult : filteredResults;
 	return (
