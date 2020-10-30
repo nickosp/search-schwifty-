@@ -40,11 +40,10 @@ const Search = () => {
 	};
 	return (
 		<div>
-			Search
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='searchBar'>
 					<input id='searchBar' onChange={handleChange} />
-					<button type='submit'>Search Characters By Keywords</button>
+					<button type='submit'>Search Characters By Name</button>
 				</label>
 			</form>
 			<Results
