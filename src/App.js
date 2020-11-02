@@ -4,6 +4,7 @@ import Home from './Home/Home';
 import { Route, Redirect } from 'react-router-dom';
 import Nav from './Nav/Nav';
 import Search from './Search/Search';
+
 // import Results from './Results/Results';
 import CharacterInfo from './CharacterInfo/CharacterInfo'
 function App() {
@@ -22,4 +23,5 @@ function App() {
 		</div>
 	);
 }
+
 export default App;
