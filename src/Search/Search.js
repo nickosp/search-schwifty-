@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Results from '../Results/Results';
-// import './index.css';
+import '../App.css';
+import '../index.css';
 const Search = () => {
 	const [filteredResults, setFilteredResults] = useState([]);
 	const [characterResult, setCharacterResult] = useState([]);

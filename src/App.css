@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,900&display=swap');
 
+
 h1 {
 	font-size: 48px;
 	text-align: center;
@@ -17,6 +18,22 @@ h3 {
 	text-align: center;
 	font-family: 'Grandstander', cursive, sans-serif;
 	text-decoration: underline;
+	
+}
+h4 {
+	font-size: 3.5rem;
+	text-align: center;
+	font-family: 'Grandstander', cursive, sans-serif;
+	text-decoration: underline;
+	color: whitesmoke;
+	
+}
+h5 {
+	font-size: 2rem;
+	text-align: center;
+	font-family: 'Grandstander', cursive, sans-serif;
+	text-decoration: underline;
+	color: whitesmoke;
 	
 }
 body {
