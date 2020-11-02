@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Results from '../Results/Results';
+// import './index.css';
 const Search = () => {
 	const [filteredResults, setFilteredResults] = useState([]);
 	const [characterResult, setCharacterResult] = useState([]);
@@ -32,6 +33,7 @@ const Search = () => {
 		event.preventDefault();
 		console.log(event.target[0].value);
 	};
+	/////// Worked with Riggs on the search filter/////
 	const handleChange = (event) => {
 		const filterResults = characterResult.filter((result) => {
 			return result.name.includes(event.target.value.toUpperCase());
@@ -43,7 +45,7 @@ const Search = () => {
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='searchBar'>
 					<input id='searchBar' onChange={handleChange} />
-					<button type='submit'>Search Characters By Name</button>
+					<button type='submit'>Search Characters </button>
 				</label>
 			</form>
 			<Results

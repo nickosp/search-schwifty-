@@ -1,38 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,900&display=swap');
+
+h1 {
+	font-size: 48px;
+	text-align: center;
+	font-family: 'Grandstander', cursive, sans-serif;
+	color: purple;
+}
+h2 {
+	font-size: 48px;
+	text-align: center;
+	font-family: 'Grandstander', cursive, sans-serif;
+	color: purple;
+}
+h3 {
+	font-size: 2rem;
+	text-align: center;
+	font-family: 'Grandstander', cursive, sans-serif;
+	text-decoration: underline;
+	
+}
+body {
+	background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/badad0a5-3e93-4739-86d6-1e1bc9c91743/ddxppe7-c321a1d8-5d07-49d9-84bf-fd258443f4d5.png/v1/fill/w_1191,h_671,q_70,strp/rick_and_morty_background_by_mmormo_ddxppe7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjEiLCJwYXRoIjoiXC9mXC9iYWRhZDBhNS0zZTkzLTQ3MzktODZkNi0xZTFiYzljOTE3NDNcL2RkeHBwZTctYzMyMWExZDgtNWQwNy00OWQ5LTg0YmYtZmQyNTg0NDNmNGQ1LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.0qd2MgtQuqBbb50LejKYyeJkP26WmGeANCkRgzGS2yw);
+	background-size: cover;
+	font-variant: small-caps;
+	font-family: 'Grandstander', cursive, sans-serif;
+	font-size: 5rem;
+	color: black;
+	text-transform: capitalize;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	text-align: center;
 }

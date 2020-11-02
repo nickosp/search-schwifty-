@@ -1,26 +1,25 @@
-$theme-colors: (
-    "primary": rgba(157, 71, 255, 0.5),
+// $theme-colors: (
+//     "primary": rgb(240, 240, 240),
     
-);
-@import '~bootstrap/scss/bootstrap.scss';
+// );
+// @import '~bootstrap/scss/bootstrap.scss';
 
-/* make the root element at least as big as the page*/
-html,
-body,
-#root {
-    height: 100%;
-}
+// html,
+// body,
+// #root {
+//     height: 100%;
+// }
 
-/* give some padding to the header, main and footer elements if they are direct children of the #root element */
 
-#root > header,
-#root > main,
-#root > footer {
-    padding: 1 rem;
-}
-body {
-    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/badad0a5-3e93-4739-86d6-1e1bc9c91743/ddxppe7-c321a1d8-5d07-49d9-84bf-fd258443f4d5.png/v1/fill/w_1191,h_671,q_70,strp/rick_and_morty_background_by_mmormo_ddxppe7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjEiLCJwYXRoIjoiXC9mXC9iYWRhZDBhNS0zZTkzLTQ3MzktODZkNi0xZTFiYzljOTE3NDNcL2RkeHBwZTctYzMyMWExZDgtNWQwNy00OWQ5LTg0YmYtZmQyNTg0NDNmNGQ1LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.0qd2MgtQuqBbb50LejKYyeJkP26WmGeANCkRgzGS2yw);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+// #root > header,
+// #root > main,
+// #root > footer {
+//     padding: 1 rem;
+// }
+// body, .p {
+//     background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/badad0a5-3e93-4739-86d6-1e1bc9c91743/ddxppe7-c321a1d8-5d07-49d9-84bf-fd258443f4d5.png/v1/fill/w_1191,h_671,q_70,strp/rick_and_morty_background_by_mmormo_ddxppe7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjEiLCJwYXRoIjoiXC9mXC9iYWRhZDBhNS0zZTkzLTQ3MzktODZkNi0xZTFiYzljOTE3NDNcL2RkeHBwZTctYzMyMWExZDgtNWQwNy00OWQ5LTg0YmYtZmQyNTg0NDNmNGQ1LnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.0qd2MgtQuqBbb50LejKYyeJkP26WmGeANCkRgzGS2yw);
+//     background-size: cover;
+//     background-position: right;
+//     background-attachment: fixed;
+
+// }
